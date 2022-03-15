@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: gainsboro;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: rgb(43, 39, 39);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .container .foot {
+    margin-right: 30px;
+}
+
+footer .container .foot.about{
+    width: 40%;
+}
+
+footer .container  h2{
+    position: relative;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 15px;
+
+}
+
+footer .container  h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: rgb(11, 161, 74);
+}
+
+footer  p{
+    color: #fff;
+}
+
+.social{
+    margin-top: 20px;
+    display: flex;
+}
+
+.social li{
+    list-style: none;
+}
+
+.social li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: rgb(173, 160, 160);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.social li a:hover{
+   background: rgb(12, 150, 12);
+}
+
+.social li a .fa{
+    color: #fff;
+}
+
+.quicklinks{
+    position: relative;
+    width: 25%;
+}
+.quicklinks ul li{
+    list-style: none;
+}
+
+.quicklinks ul li a{
+    color: #ffff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quicklinks ul li a:hover{
+    color: rgb(12, 150, 12);
+}
+
+.contact{
+
+}
+.contact .info{
+    position: relative;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact .info li span{
+    color: azure;
+}
+.contact .info li a{
+    color: azure;
+    text-decoration: none;
+}
+
+.contact .info li a:hover{
+    color: rgb(12, 150, 12);
+}
+
+.copyright{
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 8px 80px;
+    text-align: center;
+}
+
+@media (max-width:991px)
+{
+    footer{
+        padding: 40px;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .sec{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .container .sec.about,.quicklinks,.contact{
+        width: 100%;
+    }
+}
